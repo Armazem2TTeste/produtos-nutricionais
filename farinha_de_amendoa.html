@@ -1,118 +1,57 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farinha de Amêndoa</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        .disclaimer {
-            font-size: 0.9em;
-            color: #777;
-            margin-top: 20px;
+<html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Farinha de Amêndoa</title>
+<style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        h1 { color: #333; }
+        h2 { color: #555; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; display: block; overflow-x: auto; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; white-space: nowrap; }
+        th { background-color: #f2f2f2; }
+        @media screen and (max-width: 600px) {
+            table, thead, tbody, th, td, tr { display: block; }
+            thead tr { position: absolute; top: -9999px; left: -9999px; }
+            tr { border: 1px solid #ccc; margin-bottom: 10px; }
+            td { border: none; border-bottom: 1px solid #eee; position: relative; padding-left: 50%; text-align: right; }
+            td:before { position: absolute; top: 6px; left: 6px; width: 45%; padding-right: 10px; white-space: nowrap; text-align: left; font-weight: bold; }
+            td:nth-of-type(1):before { content: "Componente"; }
+            td:nth-of-type(2):before { content: "Quantidade"; }
+            td:nth-of-type(3):before { content: "% VD*"; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Farinha de Amêndoa</h1>
-        <p>A farinha de amêndoa é um ingrediente versátil e nutritivo, obtido a partir de amêndoas moídas e sem pele. É uma excelente alternativa à farinha de trigo tradicional, especialmente para dietas com restrição de glúten e baixo carboidrato. Rica em nutrientes essenciais, ela confere sabor e textura a diversas preparações culinárias.</p>
+<h1>Farinha de Amêndoa</h1>
+<h2>Informação Nutricional (porção de 100g):</h2>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Quantidade</th>
+<th>% VD*</th>
+</tr>
+</thead>
+<tbody></tbody>
+<tbody>
+<tr><td>Energia (kcal)</td><td>579</td><td>29%</td></tr>
+<tr><td>Carboidratos (g)</td><td>9,5</td><td>3%</td></tr>
+<tr><td>Proteínas (g)</td><td>21,2</td><td>42%</td></tr>
+<tr><td>Gorduras Totais (g)</td><td>50,6</td><td>92%</td></tr>
+<tr><td>Gorduras Saturadas (g)</td><td>3,9</td><td>18%</td></tr>
+<tr><td>Fibra Alimentar (g)</td><td>10,4</td><td>42%</td></tr>
+<tr><td>Sódio (mg)</td><td>7</td><td>0%</td></tr>
+</tbody></table><p>*Percentual de valores diários fornecidos pela porção. NE: Não estabelecido.</p>
 
-        <h2>Informação Nutricional (por 100g)</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Nutriente</th>
-                    <th>Quantidade</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Valor Energético</td>
-                    <td>575-600 kcal</td>
-                </tr>
-                <tr>
-                    <td>Gorduras Totais</td>
-                    <td>50-55 g</td>
-                </tr>
-                <tr>
-                    <td>Carboidratos</td>
-                    <td>15-20 g</td>
-                </tr>
-                <tr>
-                    <td>Fibras</td>
-                    <td>9-12 g</td>
-                </tr>
-                <tr>
-                    <td>Proteínas</td>
-                    <td>20-25 g</td>
-                </tr>
-                <tr>
-                    <td>Vitamina E</td>
-                    <td>Alta</td>
-                </tr>
-                <tr>
-                    <td>Magnésio</td>
-                    <td>Alto</td>
-                </tr>
-                <tr>
-                    <td>Cálcio</td>
-                    <td>Alto</td>
-                </tr>
-                <tr>
-                    <td>Fósforo</td>
-                    <td>Alto</td>
-                </tr>
-            </tbody>
-        </table>
 
-        <h2>Benefícios da Farinha de Amêndoa</h2>
-        <ul>
-            <li><strong>Rica em Nutrientes:</strong> Fonte de vitamina E (antioxidante), magnésio, cálcio, fósforo e vitaminas do complexo B.</li>
-            <li><strong>Saúde Cardiovascular:</strong> Contribui para a saúde do coração devido ao alto teor de gorduras monoinsaturadas.</li>
-            <li><strong>Controle Glicêmico:</strong> Ajuda a regular os níveis de açúcar no sangue, sendo benéfica para diabéticos e dietas de baixo carboidrato.</li>
-            <li><strong>Saúde Óssea:</strong> Rica em cálcio e fósforo, minerais essenciais para a manutenção de ossos e dentes saudáveis.</li>
-            <li><strong>Digestão:</strong> O alto teor de fibras auxilia no bom funcionamento intestinal.</li>
-            <li><strong>Saciedade e Emagrecimento:</strong> Ajuda a promover a sensação de saciedade, podendo auxiliar no controle de peso.</li>
-            <li><strong>Sem Glúten:</strong> Ideal para pessoas com doença celíaca ou sensibilidade ao glúten.</li>
-        </ul>
-
-        <p class="disclaimer"><em>As informações nutricionais podem variar ligeiramente dependendo da marca e do processamento do produto. Consulte sempre um profissional de saúde ou nutricionista para orientações personalizadas.</em></p>
-    </div>
-</body>
-</html>
+<p>A farinha de amêndoa é um ingrediente versátil e nutritivo, ideal para diversas receitas.</p>
+<h2>Seus principais benefícios incluem:</h2>
+<ul>
+<li>Rica em gorduras monoinsaturadas</li>
+<li>Excelente fonte de vitamina E</li>
+<li>Rica em magnésio e cálcio</li>
+<li>Baixo teor de carboidratos</li>
+</ul>
+<h2>Usado em:</h2>
+<p>bolos low carb, biscoitos, farofas, cobertura de pratos, receitas sem glúten.</p>
+</body></html>

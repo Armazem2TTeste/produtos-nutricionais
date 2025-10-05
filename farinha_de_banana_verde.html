@@ -1,269 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Farinha de Banana Verde</title>
+<style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        h1 { color: #333; }
+        h2 { color: #555; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; display: block; overflow-x: auto; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; white-space: nowrap; }
+        th { background-color: #f2f2f2; }
+        @media screen and (max-width: 600px) {
+            table, thead, tbody, th, td, tr { display: block; }
+            thead tr { position: absolute; top: -9999px; left: -9999px; }
+            tr { border: 1px solid #ccc; margin-bottom: 10px; }
+            td { border: none; border-bottom: 1px solid #eee; position: relative; padding-left: 50%; text-align: right; }
+            td:before { position: absolute; top: 6px; left: 6px; width: 45%; padding-right: 10px; white-space: nowrap; text-align: left; font-weight: bold; }
+            td:nth-of-type(1):before { content: "Componente"; }
+            td:nth-of-type(2):before { content: "Quantidade"; }
+            td:nth-of-type(3):before { content: "% VD*"; }
+        }
+    </style>
+</head>
+<body>
+<h1>Farinha de Banana Verde</h1>
+<h2>Informação Nutricional (porção de 100g):</h2>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Quantidade</th>
+<th>% VD*</th>
+</tr>
+</thead>
+<tbody><tr><td>Energia (kcal)</td><td>306</td><td>15%</td></tr><tr><td>Carboidratos (g)</td><td>70,0</td><td>23%</td></tr><tr><td>Proteínas (g)</td><td>4,3</td><td>9%</td></tr><tr><td>Gorduras Totais (g)</td><td>0,8</td><td>1%</td></tr><tr><td>Gorduras Saturadas (g)</td><td>0,2</td><td>1%</td></tr><tr><td>Fibra Alimentar (g)</td><td>7,0</td><td>28%</td></tr><tr><td>Sódio (mg)</td><td>20</td><td>1%</td></tr></tbody></table><p>*Percentual de valores diários fornecidos pela porção. NE: Não estabelecido.</p>
 
-    <title>Farinha de Banana Verde</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js" defer></script>
-    <script src="slider.js" defer></script>
-    <script src="cart.js" defer></script>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <nav class="navbar">
-          <section class="nav-first">
-            <svg
-              class="menu-icon"
-              width="16"
-              height="15"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z"
-                fill="#69707D"
-                fill-rule="evenodd"
-              />
-            </svg>
-            <div class="logo">
-              <img src="images/logo.svg" alt="Logo da Empresa" />
-            </div>
-            <div class="backdrop"></div>
-            <div class="nav-links">
-              <svg
-                class="close-icon"
-                width="14"
-                height="15"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
-                  fill="#69707D"
-                  fill-rule="evenodd"
-                />
-              </svg>
-              <a href="#">Coleções</a>
-              <a href="#">Homens</a>
-              <a href="#">Mulheres</a>
-              <a href="#">Sobre</a>
-              <a href="#">Contato</a>
-            </div>
-          </section>
-          <section class="nav-second">
-            <div class="cart">
-              <img
-                class="cart-icon"
-                src="images/icon-cart.svg"
-                alt="Ícone do Carrinho"
-              />
-              <div class="cart-container">
-                <div class="cart-title">Carrinho</div>
-                <div class="cart-items empty">
-                  <p class="cart-empty">Seu carrinho está vazio</p>
-                </div>
-                <button class="checkout empty">Finalizar Compra</button>
-              </div>
-              <div class="cart-count">
-                <span class="qty">0</span>
-              </div>
-            </div>
-            <div class="avatar">
-              <img src="images/image-avatar.png" alt="Avatar do Usuário" />
-            </div>
-          </section>
-        </nav>
-      </header>
 
-      <section class="main">
-        <div class="default gallery">
-          <div class="main-img">
-            <img
-              class="active"
-              src="images/image-product-1.jpg"
-              alt="Farinha de Banana Verde"
-            />
-            <img src="images/image-product-2.jpg" alt="Farinha de Banana Verde"
-            />
-            <img src="images/image-product-3.jpg" alt="Farinha de Banana Verde"
-            />
-            <img src="images/image-product-4.jpg" alt="Farinha de Banana Verde"
-            />
-          </div>
-          <div class="thumb-list">
-            <div class="active">
-              <img
-                src="images/image-product-1-thumbnail.jpg"
-                alt="Farinha de Banana Verde"
-              />
-            </div>
-            <div>
-              <img
-                src="images/image-product-2-thumbnail.jpg"
-                alt="Farinha de Banana Verde"
-              />
-            </div>
-            <div>
-              <img
-                src="images/image-product-3-thumbnail.jpg"
-                alt="Farinha de Banana Verde"
-              />
-            </div>
-            <div>
-              <img
-                src="images/image-product-4-thumbnail.jpg"
-                alt="Farinha de Banana Verde"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="lightbox">
-          <div class="gallery">
-            <div class="main-img">
-              <span class="icon-close">
-                <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
-                    fill="#69707D"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-              </span>
-              <span class="icon-prev">
-                <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M11 1 3 9l8 8"
-                    stroke="#1D2026"
-                    stroke-width="3"
-                    fill="none"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-              </span>
-              <span class="icon-next">
-                <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="m2 1 8 8-8 8"
-                    stroke="#1D2026"
-                    stroke-width="3"
-                    fill="none"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-              </span>
-              <img
-                class="active"
-                src="images/image-product-1.jpg"
-                alt="Farinha de Banana Verde"
-              />
-              <img src="images/image-product-2.jpg" alt="Farinha de Banana Verde"
-              />
-              <img src="images/image-product-3.jpg" alt="Farinha de Banana Verde"
-              />
-              <img src="images/image-product-4.jpg" alt="Farinha de Banana Verde"
-              />
-            </div>
-            <div class="thumb-list">
-              <div class="active">
-                <img
-                  src="images/image-product-1-thumbnail.jpg"
-                  alt="Farinha de Banana Verde"
-                />
-              </div>
-              <div>
-                <img
-                  src="images/image-product-2-thumbnail.jpg"
-                  alt="Farinha de Banana Verde"
-                />
-              </div>
-              <div>
-                <img
-                  src="images/image-product-3-thumbnail.jpg"
-                  alt="Farinha de Banana Verde"
-                />
-              </div>
-              <div>
-                <img
-                  src="images/image-product-4-thumbnail.jpg"
-                  alt="Farinha de Banana Verde"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="content">
-          <h3>PRODUTO NUTRACÊUTICO</h3>
-          <h2 class="product-name">Farinha de Banana Verde</h2>
-          <p class="product-desc">
-            A Farinha de Banana Verde é um superalimento rico em amido resistente, vitaminas e minerais. Ideal para quem busca uma alimentação saudável e equilibrada. Ajuda a controlar a diabetes, melhora o funcionamento intestinal, diminui o colesterol e triglicerídeos, atua como prebiótico, combate a depressão, controla a pressão arterial e melhora o desempenho físico.
-          </p>
-          <div class="price-info">
-            <div class="price">
-              <span class="current-price">R$ 25,00</span>
-              <span class="discount">10% OFF</span>
-            </div>
-            <div class="prev-price">R$ 27,50</div>
-          </div>
-          <div class="add-to-cart-container">
-            <div class="counter">
-              <button class="minus">
-                <svg
-                  width="12"
-                  height="4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <defs>
-                    <path
-                      d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z"
-                      id="a"
-                    />
-                  </defs>
-                  <use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a" />
-                </svg>
-              </button>
-              <span class="count">0</span>
-              <button class="plus">
-                <svg
-                  width="12"
-                  height="12"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <defs>
-                    <path
-                      d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z"
-                      id="b"
-                    />
-                  </defs>
-                  <use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b" />
-                </svg>
-              </button>
-            </div>
-            <button class="add-to-cart">
-              <span>
-                <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
-                    fill="#69707D"
-                    fill-rule="nonzero"
-                  />
-                </svg>
-              </span>
-              <span>Adicionar ao carrinho</span>
-            </button>
-          </div>
-        </div>
-      </section>
-    </div>
-  </body>
-</html>
+<p>A Farinha de Banana Verde é rica em amido resistente e nutrientes essenciais.</p>
+<h2>Seus principais benefícios incluem:</h2>
+<ul>
+<li>Rica em amido resistente que atua como prebiótico</li>
+<li>Promove a saciedade e controla a glicemia</li>
+<li>Rica em potássio e triptofano</li>
+<li>Melhora o funcionamento intestinal</li>
+</ul>
+<h2>Usado em:</h2>
+<p>vitaminas, sucos, iogurtes, bolos, pães, mingaus, receitas funcionais.</p>
+</body></html>
